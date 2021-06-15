@@ -10,6 +10,14 @@ public class Aksi {
         fulan.jumlahSKS = 100;
         fulan.ipk   = 3.11;
         fulan.tampilkanInfo();
+        fulan.create();
+
+        fulan.tampilkanInfo();
+        if (fulan.create()) {
+            System.out.println("Data Berhasil Di Simpan");
+        }else{
+            System.out.println("Data Gagal disimpan");
+        }
 
         Mahasiswa mahasiswa = new Mahasiswa();
         mahasiswa.npm   = "19875623";
